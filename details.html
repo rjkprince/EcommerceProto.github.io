@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOPLANE</title>
+    <link rel="stylesheet" href="./header.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/5576fe9fdb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./details.css" />
+  </head>
+  <body>
+    <header>
+      <div id="overlay"></div>
+      <div id="dropdown">
+        <div id="drp-header">
+          <img src="./assets/20.jpg" alt="avatar" class="avatar drp-avatar" />
+          <div class="cross">
+            <div class="cross-ico1">
+              <div class="cross-ico2"></div>
+            </div>
+          </div>
+        </div>
+        <h1 class="brand-title drp-title">
+          <a href="./index.html"><span>SHOP</span>LANE</a>
+        </h1>
+        <nav class="drp-nav">
+          <a href="./index.html#clothing">CLOTHING</a>
+          <a href="./index.html#accessories">ACCESSORIES</a>
+        </nav>
+      </div>
+      <nav id="topbar">
+        <div id="drp">
+          <div class="drp-ico"></div>
+          <div class="drp-ico large"></div>
+          <div class="drp-ico"></div>
+        </div>
+        <h1 class="brand-title">
+          <a href="./index.html"><span>SHOP</span>LANE</a>
+        </h1>
+        <a href="./index.html#clothing">CLOTHING</a>
+        <a href="./index.html#accessories">ACCESSORIES</a>
+        <div id="search-bar">
+          <input
+            type="text"
+            id="g-search"
+            placeholder="Search for Clothing and Accessories"
+          />
+          <i class="fas fa-search"></i>
+        </div>
+
+        <div id="cart">
+          <a href="./checkout.html">
+            <i class="fas fa-shopping-cart"></i>
+            <div id="cart-num"><p id="cart-count">0</p></div>
+          </a>
+        </div>
+
+        <img src="./assets/20.jpg" alt="avatar" class="avatar" />
+      </nav>
+    </header>
+    <a href="https://www.edyoda.com/">
+      <img
+        src="./assets/edyoda_project.png"
+        alt="project-logo"
+        id="project-logo"
+    /></a>
+    <main>
+      <div id="product-cont">
+        <img
+          src="https://test-hosting-8f9bf.web.app/assets/default-product.png"
+          alt="default-img"
+          id="default-img"
+        />
+        <div id="product-desc">
+          <h1 id="product-title">Product Title</h1>
+          <h2 id="product-brand">Product Brand</h2>
+          <h2 id="product-price">Price: Rs <span id="price">XXXX</span></h2>
+          <h2 id="desc-title">Description</h2>
+          <p id="desc">Product Description</p>
+          <h2 id="preview">Product Preview</h2>
+          <div id="preview-imgs">
+            <img
+              src="https://test-hosting-8f9bf.web.app/assets/default-product.png"
+              alt="default-img"
+              class="preview-img"
+            />
+            <img
+              src="https://test-hosting-8f9bf.web.app/assets/default-product.png"
+              alt="default-img"
+              class="preview-img"
+            />
+            <img
+              src="https://test-hosting-8f9bf.web.app/assets/default-product.png"
+              alt="default-img"
+              class="preview-img"
+            />
+          </div>
+          <button id="btn-cart">Add to Cart</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <nav id="footbar">
+        <div class="f-nav-item">
+          <h3 class="f-nav-item-title">ONLINE STORE</h3>
+          <a href="#" class="f-nav-item-a">MEN CLOTHING</a>
+          <a href="#" class="f-nav-item-a">WOMEN CLOTHING</a>
+          <a href="#" class="f-nav-item-a">MEN ACCESSORIES</a>
+          <a href="#" class="f-nav-item-a">WOMEN ACCESSORIES</a>
+        </div>
+        <div class="f-nav-item">
+          <h3 class="f-nav-item-title">HELPFUL LINKS</h3>
+          <a href="#" class="f-nav-item-a">HOME</a>
+          <a href="#" class="f-nav-item-a">ABOUT</a>
+          <a href="#" class="f-nav-item-a">CONTACT</a>
+        </div>
+        <div class="f-nav-item">
+          <h3 class="f-nav-item-title">PARTNERS</h3>
+          <a href="#" class="f-nav-item-a">ZARA</a>
+          <a href="#" class="f-nav-item-a">PANTALOONS</a>
+          <a href="#" class="f-nav-item-a">LEVIS</a>
+          <a href="#" class="f-nav-item-a">UCB</a>
+          <a href="#" class="f-nav-item-a">MANY MORE+</a>
+        </div>
+        <div class="f-nav-item">
+          <h3 class="f-nav-item-title">ADDRESS</h3>
+          <p href="#" class="f-nav-item-a">BUILDING 101</p>
+          <p href="#" class="f-nav-item-a">CENTRAL AVENUE</p>
+          <p href="#" class="f-nav-item-a">LA - 902722</p>
+          <p href="#" class="f-nav-item-a">UNITED STATES</p>
+        </div>
+      </nav>
+    </footer>
+    <script src="./header.js"></script>
+    <script src="./details.js"></script>
+  </body>
+</html>
