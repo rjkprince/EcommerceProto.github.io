@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   background-color: rgb(221, 219, 219, 0.3);
+  -webkit-tap-highlight-color: transparent;
 }
 header {
   position: fixed;

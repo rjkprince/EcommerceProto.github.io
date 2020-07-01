@@ -29,11 +29,12 @@ body {
 .item-card {
   width: 19%;
   box-sizing: border-box;
-  box-shadow: 0 2px 5px #ccc;
+  box-shadow: 0 0 5px #ccc;
+  background-color: #fff;
   border-radius: 5px;
   margin-left: 0.5%;
   margin-right: 0.5%;
-  transition: background-color linear 300ms;
+  transition: box-shadow linear 300ms;
 }
 .item-img {
   width: 100%;

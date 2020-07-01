@@ -67,12 +67,12 @@ $(function () {
             .on({
               mouseover: function () {
                 $('.item-card').eq(i).css({
-                  'background-color': 'rgba(255,0,0,0.2)',
+                  'box-shadow': '0 0 10px #009688',
                 });
               },
               mouseleave: function () {
                 $('.item-card').eq(i).css({
-                  'background-color': '#fff',
+                  'box-shadow': '0 0 5px #ccc',
                 });
               },
             });
