@@ -6,6 +6,15 @@ body {
   background-color: rgb(221, 219, 219, 0.3);
   -webkit-tap-highlight-color: transparent;
 }
+#bg-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -11;
+  filter: blur(2px);
+}
 header {
   position: fixed;
   top: 0;
@@ -27,7 +36,7 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 85%;
+  width: 95%;
   margin: auto;
 }
 .avatar {
@@ -39,7 +48,31 @@ main {
   font-weight: 400;
   line-height: 10px;
   letter-spacing: 1px;
+  position: relative;
   font-family: 'Open Sans', sans-serif;
+  animation-name: move;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+}
+@keyframes move {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: 40px;
+  }
+  50% {
+    left: 0;
+  }
+  75% {
+    left: -40px;
+  }
+  100% {
+    left: 0;
+  }
 }
 .brand-title span {
   font-weight: 800;
@@ -49,6 +82,7 @@ main {
   color: black;
   font-weight: 600;
 }
+
 #g-search {
   width: 320px;
   padding: 10px 10px 10px 70px;
@@ -75,7 +109,7 @@ main {
 #cart {
   position: relative;
   display: flex;
-  transform: translateX(30px);
+  transform: translateX(10px);
   cursor: pointer;
 }
 
@@ -160,6 +194,23 @@ footer {
   opacity: 0.8;
 }
 @media (max-width: 992px) {
+  @keyframes move {
+    0% {
+      left: 0;
+    }
+    25% {
+      left: 10px;
+    }
+    50% {
+      left: 0;
+    }
+    75% {
+      left: -10px;
+    }
+    100% {
+      left: 0;
+    }
+  }
   main {
     margin-top: 70px;
     padding-bottom: 10%;
@@ -191,6 +242,23 @@ footer {
   }
 }
 @media (max-width: 600px) {
+  @keyframes move {
+    0% {
+      left: 0;
+    }
+    25% {
+      left: 10px;
+    }
+    50% {
+      left: 0;
+    }
+    75% {
+      left: -10px;
+    }
+    100% {
+      left: 0;
+    }
+  }
   main {
     margin-top: 50px;
     padding-bottom: 15%;

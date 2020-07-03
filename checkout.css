@@ -6,6 +6,11 @@ main {
   display: flex;
   align-items: center;
 }
+#bg-img {
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.4;
+}
 .span-count i {
   color: #00665c;
   cursor: pointer;
