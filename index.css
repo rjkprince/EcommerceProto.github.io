@@ -97,6 +97,7 @@ body {
   }
   .item-card {
     width: 100%;
+    margin-bottom: 30px;
   }
   .banner-img {
     padding: 0;
