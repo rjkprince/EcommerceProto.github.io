@@ -111,9 +111,11 @@ $(function () {
         .eq(0)
         .text(pMsg + msg1.charAt(i));
       i++;
-      setTimeout(typeWriter1, 100);
+      setTimeout(typeWriter1, 110);
     } else {
-      typeWriter2();
+      setTimeout(() => {
+        typeWriter2();
+      }, 3000);
     }
   }
   function typeWriter2() {
@@ -123,7 +125,7 @@ $(function () {
 
       $('.sec-title').eq(0).text(pMsg);
       i--;
-      setTimeout(typeWriter2, 50);
+      setTimeout(typeWriter2, 30);
     } else {
       typeWriter1();
     }
@@ -141,9 +143,11 @@ $(function () {
         .eq(1)
         .text(pMsg + msg2.charAt(j));
       j++;
-      setTimeout(typeWriter3, 100);
+      setTimeout(typeWriter3, 110);
     } else {
-      typeWriter4();
+      setTimeout(() => {
+        typeWriter4();
+      }, 3000);
     }
   }
   function typeWriter4() {
@@ -153,7 +157,7 @@ $(function () {
 
       $('.sec-title').eq(1).text(pMsg);
       j--;
-      setTimeout(typeWriter4, 50);
+      setTimeout(typeWriter4, 30);
     } else {
       typeWriter3();
     }
